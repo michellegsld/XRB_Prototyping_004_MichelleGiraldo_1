@@ -17,13 +17,9 @@ fit through a hole in the wall so they don't get hit.
 
 ## Todo
 
-**Current Goal:** Finish adding Colliders to the walls and then randomize their spawn.
+**Current Goal:** Work on wall randomization and spawn
 
-*10/25 1:22PM -* Completed detection of player and play area! It turns out the walls
-lost their colliders after using the ProBuilder Experimental Boolean Tool to cut the
-hole out. This means I need to add colliders to the walls and outline the shape for
-the player to go through. Then I will flesh out the spawning of walls and randomly
-choosing which one to be in play.
+*10/25 4:03PM -* Added colliders to most walls. Now I added the completed ones to a list to randomly select one to spawn.
 
 ![KanbanBoardProgress](Images_README/KanbanBoardProgress.jpg)
 
