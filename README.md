@@ -19,13 +19,10 @@ fit through a hole in the wall so they don't get hit.
 
 **Current Goal:** Work on Player colliders with moving wall.
 
-*10/25 12:12PM -* Finished up the walls and added pipes on bottom (really should be
-on top or on sides because it's unrealistic the way it's moving now).
-
-*10/25 1:15AM -* **IDEA Note for** *"Create Way to Spawn More Walls On Pass"* **:**
-Create a collider for the play area. If wall is detected in it then the wall is
-currently passing the player... if it makes it past the play area then the wall can
-be removed or "put away". Then a new wall can be spawned or "sent out".
+*10/25 1:00PM -* The MovingWallTemplate now moves past the PlayArea and is detected
+when it collides with it's mesh collider. This has been done using Triggers on the
+MovingWallTemplate. Now to test out a wall with a hole and it's detection with
+a player.
 
 ![KanbanBoardProgress](Images_README/KanbanBoardProgress.jpg)
 
