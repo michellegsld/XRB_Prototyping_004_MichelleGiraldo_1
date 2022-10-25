@@ -9,8 +9,9 @@ public class MoveWall : MonoBehaviour
     private float _speed = 5f;
     [SerializeField]
     private bool _move = false;
-
+    
     public Vector3 wallDes;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,7 @@ public class MoveWall : MonoBehaviour
             if (Mathf.Abs(transform.position.x - wallDes.x) <= 0.5f)
             {
                 Debug.Log("The wall reached it's destination");
+                _move = false;
             }
         }
     }
