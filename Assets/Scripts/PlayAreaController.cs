@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class PlayAreaController : MonoBehaviour
 {
+    public bool wallMoving = false;
+
+    public List<GameObject> walls;
+    
     // Start is called before the first frame update
     void Start()
     {

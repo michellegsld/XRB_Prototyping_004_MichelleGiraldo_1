@@ -10,8 +10,6 @@ public class MoveWall : MonoBehaviour
     [SerializeField]
     private bool _move = false;
     
-    public Vector3 wallDes;
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -22,10 +20,10 @@ public class MoveWall : MonoBehaviour
     {
         if (_move)
         {
-            transform.position = Vector3.MoveTowards(transform.position, wallDes,
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(20f, 4.5f, 0f),
                 _speed * Time.deltaTime);
 
-            if (Mathf.Abs(transform.position.x - wallDes.x) <= 0.5f)
+            if (Mathf.Abs(transform.position.x - 20f) <= 0.5f)
             {
                 Debug.Log("The wall reached it's destination");
                 _move = false;
