@@ -17,9 +17,11 @@ fit through a hole in the wall so they don't get hit.
 
 ## Todo
 
-**Current Goal:** Work on wall randomization and spawn
+**Current Goal:** Add a timer and lives on the wall. Do within 10 minutes as I have to wrap up.
 
-*10/25 4:03PM -* Added colliders to most walls. Now I added the completed ones to a list to randomly select one to spawn.
+*10/25 4:50PM -* Walls now randomly selected when they spawn and disappear once they pass
+the play area. A wall won't spawn if the player isn't detected and the final piece to add
+are lives and a timer.
 
 ![KanbanBoardProgress](Images_README/KanbanBoardProgress.jpg)
 
