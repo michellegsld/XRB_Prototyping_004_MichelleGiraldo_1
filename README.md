@@ -17,12 +17,12 @@ fit through a hole in the wall so they don't get hit.
 
 ## Todo
 
-**Current Moment Goal:** Cut out the holes in the walls by using each shape and
-accommodating for left, middle, and right.
+**Morning Goal:** Try to make more Left and Right walls, else start with player
+collider and it's interaction with the walls.
 
-*10/25 2:39AM -* Currently cutting the holes out of the walls in order to
-create the "randomized" list. Created as many outlines as I could think off the
-top of my head.
+*10/25 4:16AM -* Hoping off now, will resume in the morning. Unity keeps crashing
+when I try to use ProBuilder and the Experimental Boolean Subtraction between the
+MovingWallTemplate and Shape8 on the Left side.
 
 *10/25 1:15AM -* **IDEA Note for** *"Create Way to Spawn More Walls On Pass"* **:**
 Create a collider for the play area. If wall is detected in it then the wall is
