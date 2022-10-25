@@ -17,11 +17,12 @@ fit through a hole in the wall so they don't get hit.
 
 ## Todo
 
-**Current Moment Goal:** Create at least 10 different walls so tomorrow morning I can get started
-on the player's colliders.
+**Current Moment Goal:** Cut out the holes in the walls by using each shape and
+accommodating for left, middle, and right.
 
-*10/25 1:06AM -* Currently creating the holes to cut out of the walls in order to
-create the "randomized" list. So far I have one outline.
+*10/25 2:39AM -* Currently cutting the holes out of the walls in order to
+create the "randomized" list. Created as many outlines as I could think off the
+top of my head.
 
 *10/25 1:15AM -* **IDEA Note for** *"Create Way to Spawn More Walls On Pass"* **:**
 Create a collider for the play area. If wall is detected in it then the wall is
