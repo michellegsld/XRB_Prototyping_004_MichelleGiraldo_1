@@ -17,12 +17,13 @@ fit through a hole in the wall so they don't get hit.
 
 ## Todo
 
-**Current Goal:** Work on Player colliders with moving wall.
+**Current Goal:** Finish adding Colliders to the walls and then randomize their spawn.
 
-*10/25 1:00PM -* The MovingWallTemplate now moves past the PlayArea and is detected
-when it collides with it's mesh collider. This has been done using Triggers on the
-MovingWallTemplate. Now to test out a wall with a hole and it's detection with
-a player.
+*10/25 1:22PM -* Completed detection of player and play area! It turns out the walls
+lost their colliders after using the ProBuilder Experimental Boolean Tool to cut the
+hole out. This means I need to add colliders to the walls and outline the shape for
+the player to go through. Then I will flesh out the spawning of walls and randomly
+choosing which one to be in play.
 
 ![KanbanBoardProgress](Images_README/KanbanBoardProgress.jpg)
 
