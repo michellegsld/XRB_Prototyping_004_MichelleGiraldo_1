@@ -17,12 +17,10 @@ fit through a hole in the wall so they don't get hit.
 
 ## Todo
 
-**Morning Goal:** Try to make more Left and Right walls, else start with player
-collider and it's interaction with the walls.
+**Current Goal:** Work on Player colliders with moving wall.
 
-*10/25 4:16AM -* Hoping off now, will resume in the morning. Unity keeps crashing
-when I try to use ProBuilder and the Experimental Boolean Subtraction between the
-MovingWallTemplate and Shape8 on the Left side.
+*10/25 12:12PM -* Finished up the walls and added pipes on bottom (really should be
+on top or on sides because it's unrealistic the way it's moving now).
 
 *10/25 1:15AM -* **IDEA Note for** *"Create Way to Spawn More Walls On Pass"* **:**
 Create a collider for the play area. If wall is detected in it then the wall is
