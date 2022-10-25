@@ -31,6 +31,7 @@ public class WallDetect : MonoBehaviour
         } else if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("Player got hit by the wall");
+            _playAreaController.lives--;
         }
     }
 

@@ -21,6 +21,7 @@ public class DetectPlayer : MonoBehaviour
         if (_playerPresence > 0)
         {
             _playAreaController.playerPresent = true;
+            _playAreaController.gameRun = true;
             Debug.Log("Player Present");
         }
         else

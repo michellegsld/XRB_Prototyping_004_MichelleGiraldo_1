@@ -2,12 +2,22 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class PlayAreaController : MonoBehaviour
 {
-   
+    private TextMeshPro _livesTMP;
+    private TextMeshPro _timerTMP;
+    private TextMeshPro _endTMP;
+
+    
+    private float _gameTime = 60.0f;
+    private float _gameTimer = 0.0f;
+    
+    public bool gameRun = false;
+
     public bool playerPresent = false;
     
     public bool wallMoving = false;
@@ -29,14 +39,33 @@ public class PlayAreaController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerPresent && !wallMoving)
+        if (lives > 0 && gameRun)
         {
-            Debug.Log("A new wall was sent");
+            if (playerPresent && !wallMoving)
+            {
+                Debug.Log("A new wall was sent");
+
+                currentWall = Instantiate(walls[Random.Range(0, walls.Count)]);
+                currentWall.SetActive(true);
+
+                wallMoving = true;
+            }
+
+            _livesTMP.SetText("Lives: " + lives);
+
+            _gameTimer += Time.deltaTime;
+            _timerTMP.SetText("Time Left: " + _gameTimer.ToString("F"));
             
-            currentWall = Instantiate(walls[Random.Range(0, walls.Count)]);
-            currentWall.SetActive(true);
-            
-            wallMoving = true;
+            if (_gameTimer >= _gameTime)
+            {
+                gameRun = false;
+                _endTMP.SetText("You Win!");
+            }
+        }
+        else if (lives == 0)
+        {
+            _livesTMP.SetText("No Lives!");
+            _endTMP.SetText("Good try :)");
         }
     }
     
