@@ -7,6 +7,10 @@ public class WallDetect : MonoBehaviour
 {
     [SerializeField]
     private Collider _playArea;
+    
+    [SerializeField]
+    private PlayAreaController _playAreaController;
+    
     // Start is called before the first frame update
     void Start()
     {

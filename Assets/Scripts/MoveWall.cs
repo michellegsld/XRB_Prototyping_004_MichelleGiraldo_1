@@ -8,7 +8,10 @@ public class MoveWall : MonoBehaviour
     [SerializeField]
     private float _speed = 5f;
     [SerializeField]
-    private bool _move = false;
+    private bool _move = true;
+    
+    [SerializeField]
+    private PlayAreaController _playAreaController;
     
     // Start is called before the first frame update
     void Start()
@@ -27,6 +30,10 @@ public class MoveWall : MonoBehaviour
             {
                 Debug.Log("The wall reached it's destination");
                 _move = false;
+
+                _playAreaController.wallMoving = false;
+                
+                Destroy(this.gameObject);
             }
         }
     }
