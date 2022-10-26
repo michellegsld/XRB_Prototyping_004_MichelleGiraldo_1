@@ -17,11 +17,16 @@ fit through a hole in the wall so they don't get hit.
 
 ## Todo
 
-**Current Goal:** Finish setting up timer and the lives.
+**Current Goal:** Implement a way to restart the game.
 
-**Next Goal:** Then to create a way to restart.
+**Next Goal:** If there's enough time, find a way to implement difficulty selection.
+Else I will just add a few plain materials for easier visual cues.
 
-*10/26 9:16AM -* Fixing `TimerTMP` and `LivesTMP` to update as player is playing.
+*10/26 9:36AM -* Completed Timer and Lives Stretch goals. Also implemented Win/Lose.
+Now I just want to find a way to add an actual restart button... should I make a
+button appear in front of the player to restart after the game ends? Not sure if
+I will have time to do difficulty but I can make those buttons as well.
+
 
 ![KanbanBoardProgress](Images_README/KanbanBoardProgress.jpg)
 
