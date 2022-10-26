@@ -30,7 +30,8 @@ public class WallDetect : MonoBehaviour
         if (other == _playArea)
         {
             Debug.Log("In play area");
-        } else if (other.gameObject.CompareTag("Player"))
+        }
+        if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("Player got hit by the wall");
             _playAreaController.lives--;
@@ -40,18 +41,14 @@ public class WallDetect : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other == _playArea)
+        if (other.gameObject.CompareTag("Player") && !_wallDodged)
         {
+            _playAreaController.descriptionTMP.SetText("Ouch!");
+        } else if (other == _playArea && _wallDodged)
+        {
+            _playAreaController.descriptionTMP.SetText("Dodged!");
+
             Debug.Log("Wall left play area");
-            if (_wallDodged)
-            {
-                _playAreaController.descriptionTMP.SetText("Dodged!");
-            }
-            else
-            {
-                _playAreaController.descriptionTMP.SetText("Ouch!");
-                _wallDodged = true;
-            }
         }
     }
 }

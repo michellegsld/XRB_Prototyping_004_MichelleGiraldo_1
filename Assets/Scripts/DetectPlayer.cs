@@ -26,8 +26,11 @@ public class DetectPlayer : MonoBehaviour
         }
         else
         {
+            _playAreaController.gameRun = false;
             _playAreaController.playerPresent = false;
             Debug.Log("No player present");
+            
+            _playAreaController.GameRestart();
         }
     }
 

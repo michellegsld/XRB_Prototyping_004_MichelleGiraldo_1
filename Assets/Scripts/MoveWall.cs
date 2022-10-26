@@ -6,7 +6,7 @@ using UnityEngine;
 public class MoveWall : MonoBehaviour
 {
     [SerializeField]
-    private float _speed = 5f;
+    public float speed;
     [SerializeField]
     private bool _move = true;
     
@@ -16,6 +16,7 @@ public class MoveWall : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        speed = _playAreaController.speed;
     }
 
     // Update is called once per frame
@@ -24,7 +25,7 @@ public class MoveWall : MonoBehaviour
         if (_move && _playAreaController.gameRun)
         {
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(20f, 4.5f, 0f),
-                _speed * Time.deltaTime);
+                speed * Time.deltaTime);
 
             if (Mathf.Abs(transform.position.x - 20f) <= 0.5f)
             {
@@ -37,6 +38,8 @@ public class MoveWall : MonoBehaviour
             }
         } else if (!_playAreaController.gameRun)
         {
+            _playAreaController.wallMoving = false;
+
             Destroy(this.gameObject);
         }
     }
