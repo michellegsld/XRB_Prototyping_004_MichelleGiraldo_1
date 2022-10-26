@@ -3183,7 +3183,6 @@ GameObject:
   - component: {fileID: 8059397424056107652}
   - component: {fileID: 8059397424056107653}
   - component: {fileID: 8059397424056107654}
-  - component: {fileID: 8059397424056107655}
   m_Layer: 0
   m_Name: MovingWallTemplate
   m_TagString: Untagged
@@ -4536,21 +4535,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &8059397424056107655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8059397424056107672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14801ab9153a96a45b7bd832d844735f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 5
-  _move: 0
-  wallDes: {x: 15.5, y: 2.5, z: 0}
 --- !u!1 &8059397424317719157
 GameObject:
   m_ObjectHideFlags: 0

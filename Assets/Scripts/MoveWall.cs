@@ -21,7 +21,7 @@ public class MoveWall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_move)
+        if (_move && _playAreaController.gameRun)
         {
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(20f, 4.5f, 0f),
                 _speed * Time.deltaTime);
@@ -35,6 +35,9 @@ public class MoveWall : MonoBehaviour
                 
                 Destroy(this.gameObject);
             }
+        } else if (!_playAreaController.gameRun)
+        {
+            Destroy(this.gameObject);
         }
     }
 }
