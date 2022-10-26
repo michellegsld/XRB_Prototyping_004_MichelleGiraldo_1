@@ -17,11 +17,11 @@ fit through a hole in the wall so they don't get hit.
 
 ## Todo
 
-**Current Goal:** Add a timer and lives on the wall. Do within 10 minutes as I have to wrap up.
+**Current Goal:** Finish setting up timer and the lives.
 
-*10/25 4:50PM -* Walls now randomly selected when they spawn and disappear once they pass
-the play area. A wall won't spawn if the player isn't detected and the final piece to add
-are lives and a timer.
+**Next Goal:** Then to create a way to restart.
+
+*10/26 9:16AM -* Fixing `TimerTMP` and `LivesTMP` to update as player is playing.
 
 ![KanbanBoardProgress](Images_README/KanbanBoardProgress.jpg)
 
