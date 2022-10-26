@@ -17,15 +17,9 @@ fit through a hole in the wall so they don't get hit.
 
 ## Todo
 
-**Current Goal:** Implement a way to restart the game.
+**Current Goal:** Add Comments to Code.
 
-**Next Goal:** If there's enough time, find a way to implement difficulty selection.
-Else I will just add a few plain materials for easier visual cues.
-
-*10/26 9:36AM -* Completed Timer and Lives Stretch goals. Also implemented Win/Lose.
-Now I just want to find a way to add an actual restart button... should I make a
-button appear in front of the player to restart after the game ends? Not sure if
-I will have time to do difficulty but I can make those buttons as well.
+*10/26 12:12PM* Finally figured out how to set up OBS and record the game. It took me a bit to upload it.
 
 
 ![KanbanBoardProgress](Images_README/KanbanBoardProgress.jpg)
